@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Rahul Nahar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(13, 41, 151);
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(103, 134, 227);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(123, 221, 236);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstsection div {
+            width: 40%;
+        }
+
+        .leftsection {
+            background-color: rgb(13, 41, 151);
+            font-size: 1.5rem;
+            color: aliceblue;
+        }
+
+        .rightsection img {
+            display: flex;
+            justify-content: right;
+            width: 40%;
+        }
+
+        .rightsection {
+            display: flex;
+            justify-content: right;
+        }
+
+        .text-blue {
+            color: rgb(123, 221, 236);
+        }
+
+        .text-yellow {
+            color: rgb(239, 227, 117);
+        }
+
+        #element {
+            color: rgb(123, 221, 236);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background-color: rgb(255, 255, 255);
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: rgb(255, 255, 255);
+            margin: 0 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Rahul's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Certifications</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi , my name is <span class="text-blue">Rahul</span> and I am a passionate
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="profile pic.jpg" alt="">
+            </div>
+        </section>
+        <section class="secondsection">
+            <h1><span class="text-yellow">Work experience</span></h1>
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['ML engineer.', 'Research analyst.', 'Web developer.'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>
