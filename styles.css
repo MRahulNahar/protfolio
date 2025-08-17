@@ -27,7 +27,7 @@
 body {
     font-family: 'Courier New', monospace;
     line-height: 1.6;
-    color: var(--white);
+    color: black;
     background: var(--gradient-dark);
     background-attachment: fixed;
     overflow-x: hidden;

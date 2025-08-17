@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Add typing animation
     const typingText = document.querySelector('.typing-text');
-    const text = 'AI & Robotics Engineer';
+    const text = 'AI & ML Engineer';
     let index = 0;
     
     function typeWriter() {
