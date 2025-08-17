@@ -132,9 +132,25 @@ nav a:hover {
     max-width: 800px;
     padding: 2rem;
 }
-.profile{
+.profile {
     width: 250px;
     height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(1.1);
+    border: 3px solid var(--neon-cyan);
+    box-shadow: 0 0 20px var(--neon-cyan), 
+                0 0 40px var(--neon-cyan),
+                inset 0 0 20px rgba(0, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.profile:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 30px var(--neon-cyan), 
+                0 0 60px var(--neon-cyan),
+                inset 0 0 30px rgba(0, 255, 255, 0.2);
+    border-color: var(--electric-purple);
 }
 
 .typing-container h1 {
