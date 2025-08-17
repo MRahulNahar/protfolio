@@ -27,7 +27,7 @@
 body {
     font-family: 'Courier New', monospace;
     line-height: 1.6;
-    color: black;
+    color: rgb(255, 255, 255);
     background: var(--gradient-dark);
     background-attachment: fixed;
     overflow-x: hidden;
@@ -132,6 +132,10 @@ nav a:hover {
     max-width: 800px;
     padding: 2rem;
 }
+.profile{
+    width: 250px;
+    height: 250px;
+}
 
 .typing-container h1 {
     font-size: 3rem;
@@ -211,7 +215,7 @@ section h2 {
 
 /* Card Styling */
 .card {
-    background: rgba(42, 42, 42, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     border: 1px solid var(--neon-cyan);
     border-radius: 10px;
     padding: 2rem;
@@ -247,7 +251,7 @@ section h2 {
 
 /* Project Cards */
 .project-card {
-    background: rgba(42, 42, 42, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     border: 1px solid var(--neon-cyan);
     border-radius: 10px;
     overflow: hidden;
@@ -278,6 +282,48 @@ section h2 {
 .project-info {
     padding: 1.5rem;
 }
+
+/* Certificate Cards */
+.certificate-card {
+    background: rgba(42, 42, 42, 0.8);
+    border: 1px solid var(--neon-cyan);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+    border-color: var(--electric-purple);
+}
+
+.certificate-image {
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+    background: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--neon-cyan);
+}
+
+.certificate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .certificate-image img {
+    transform: scale(1.05);
+}
+
 
 .tech-stack {
     display: flex;
@@ -565,7 +611,7 @@ section h2::after {
 
 /* Card Styling with Nature Touch */
 .card {
-    background: white;
+    background: rgb(0, 0, 0);
     border-radius: 15px;
     padding: 2rem;
     margin: 1rem;
@@ -581,7 +627,7 @@ section h2::after {
 
 /* Project Cards */
 .project-card {
-    background: white;
+    background: rgb(0, 0, 0);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -610,7 +656,7 @@ section h2::after {
 
 /* Form Styling */
 form {
-    background: white;
+    background: rgb(0, 0, 0);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
